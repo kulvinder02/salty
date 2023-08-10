@@ -63,8 +63,6 @@ section {
     font-weight: 400;
 }
 
-
-
 .w-365 {
     width: 365px;
 }
@@ -75,9 +73,10 @@ section {
     background: linear-gradient(159.99deg, #FFD482 13.35%, #FFBE82 118.92%);
 }
 
-.sec-6-heading{
+.sec-6-heading {
     padding-right: 65px;
 }
+
 /* slider Start */
 .card-main {
     width: 300px;
@@ -89,7 +88,6 @@ section {
     width: 500px;
     position: relative;
     overflow: hidden;
-    /* <===  */
     border-radius: 15px;
 }
 
@@ -128,6 +126,17 @@ section {
 
 /* slider End */
 
+span a{
+    border: 1px solid;
+    border-color: var(--color-black);
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px;
+    margin-right: 15px;
+}
+span a:hover{
+    color: white;
+    background-color: #2D3134;
+}
 @media (min-width:576px) {
     :root {
         --fs-12: 12px;
@@ -141,7 +150,7 @@ section {
         --fs-28: 28px;
         --fs-40: 32px !important;
         --fs-46: 46px;
-        --fs-56: 56px;
+        --fs-56: 40px !important;
         --fs-84: 84px;
     }
 
@@ -156,6 +165,25 @@ section {
     .send-btn {
         top: 9px;
         left: 80%;
+    }
+    .sec-6-heading{
+        padding-right: 0px;
+    }
+
+}
+
+@media (min-width:768px) {
+    .sec-6-heading {
+        padding-right: 0px;
+    }
+
+    .fs-56 {
+        font-size: 48px !important;
+    }
+
+    .line-sm {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -172,7 +200,7 @@ section {
         --fs-28: 28px;
         --fs-40: 40px !important;
         --fs-46: 46px;
-        --fs-56: 56px;
+        --fs-56: 56px ;
         --fs-84: 84px;
     }
 
@@ -192,4 +220,33 @@ section {
         left: 84%;
     }
 
+    .line-lg {
+        margin-right: auto;
+        margin-left: 0;
+    }
+    .sec-6-heading{
+        padding-right: 65px;
+    }
+    .fs-56{
+        font-size: 46px !important;
+    }
+}
+@media (min-width:1200px) {
+    .fs-56{
+        font-size: 56px !important;
+    }
+    .line{
+        margin-left: 22px;
+    }
+    .ps-22{
+        padding-left: 22px;
+    }
+}
+@media (min-width:1400px) {
+    .ps-22{
+        padding-left: 11%;
+    }
+    .line{
+        margin-left: 80px;
+    }
 }
