@@ -248,9 +248,32 @@ span {
     padding-left: 15px;
     padding-right: 15px;
 }
-.slider3 .slick-next{
+
+.slider3 .slick-next {
     top: 30 !important;
 }
+
+.slider3 {
+    z-index: 2;
+}
+
+.slider3 .slick-list {
+    padding: 0 20% 0 0;
+    position: relative;
+    overflow: visible !important;
+    z-index: -1;
+}
+
+.slider3::after {
+    content: ' ';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 4000px;
+    right: 100%;
+    background-color: #FAF8ED;
+}
+
 @media (max-width:992px) {
 
     dl,
