@@ -82,6 +82,9 @@
 .fw-500 {
     font-weight: var(--fw-500);
 }
+.fw-600 {
+    font-weight: var(--fw-600);
+}
 
 .fw-400 {
     font-weight: var(--fw-400);
@@ -111,3 +114,83 @@
 .clr-blue{
     color: var(  --blue-color);
 }
+
+@media(min-width:320px) {
+   :root{
+    --fs-12: 10px;
+    --fs-14: 14px;
+    --fs-16: 12px;
+    --fs-18: 14px;
+    --fs-20: 16px;
+    --fs-21: 14px;
+    --fs-24: 18px;
+    --fs-26: 18px;
+    --fs-28: 28px;
+    --fs-40: 40px;
+    --fs-46: 26px;
+    --fs-56: 22px;
+    --fs-84: 24px;
+
+    --fw-500:400;
+
+   } 
+}
+@media(min-width:576px) {
+    :root{
+     --fs-12: 10px;
+     --fs-14: 14px;
+     --fs-16: 16px;
+     --fs-18: 16px;
+     --fs-20: 18px;
+     --fs-21: 18px;
+     --fs-24: 20px;
+     --fs-26: 20px;
+     --fs-28: 28px;
+     --fs-40: 40px;
+     --fs-46: 36px;
+     --fs-56: 36px;
+     --fs-84: 50px;
+ 
+    } 
+    .card-bttn {
+        padding: 7px;
+    }
+ }
+ @media(min-width:768px) {
+    :root{
+     --fs-12: 10px;
+     --fs-14: 14px;
+     --fs-16: 16px;
+     --fs-18: 18px;
+     --fs-20: 18px;
+     --fs-21: 18px;
+     --fs-24: 22px;
+     --fs-26: 24px;
+     --fs-28: 28px;
+     --fs-40: 40px;
+     --fs-46: 40px;
+     --fs-56: 46px;
+     --fs-84: 64px;
+ 
+    } 
+ }
+ @media(min-width:992px) {
+    :root{
+     --fs-12: 12px;
+     --fs-14: 14px;
+     --fs-16: 16px;
+     --fs-18: 18px;
+     --fs-20: 20px;
+     --fs-21: 21px;
+     --fs-24: 24px;
+     --fs-26: 26px;
+     --fs-28: 28px;
+     --fs-40: 40px;
+     --fs-46: 46px;
+     --fs-56: 56px;
+     --fs-84: 84px;
+ 
+
+     --fw-500:500;
+    } 
+ }
