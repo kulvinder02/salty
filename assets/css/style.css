@@ -363,13 +363,13 @@ span {
     position: absolute;
     top: 0px;
     bottom: 0px;
-    width: 8000px !important;
-    height: 5000px !important;
-    right: 98.8%;
+    width: 5000px !important;
+    height: 1000px !important;
+    right: 98.9% !important;
     background-color:#FAF8ED !important;
     box-shadow: none !important ;
     /* width: 4000px; */
-    right: 100%;
+    /* right: 100%; */
     background-color: #FAF8ED;
 }
 
