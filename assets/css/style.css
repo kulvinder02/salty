@@ -7,9 +7,11 @@
     transition: 500ms;
     /* border: solid 1px red; */
 }
-button{
+
+button {
     border: unset !important;
 }
+
 #topBtn {
     display: none;
     position: fixed;
@@ -17,15 +19,17 @@ button{
     right: 120px;
     z-index: 99;
     cursor: pointer;
-    background:transparent;
-  }
-  
-  #topBtn:hover  svg circle{
-   fill: #000;
-  }
-  #preloder{
+    background: transparent;
+}
+
+#topBtn:hover svg circle {
+    fill: #000;
+}
+
+#preloder {
     z-index: 1000 !important;
-  }
+}
+
 span {
     color: unset !important;
 }
@@ -147,8 +151,9 @@ span {
     margin-left: 40px !important;
 
 }
-.small-box-mt{
-    margin-top:8px ;
+
+.small-box-mt {
+    margin-top: 8px;
 }
 
 .border-lft {
@@ -219,9 +224,11 @@ span {
     cursor: pointer;
     border-radius: 300px !important;
 }
-.arrowright{
+
+.arrowright {
     transform: rotate(180deg);
 }
+
 .slider-img-effet::after {
     content: "visit";
     position: absolute;
@@ -253,11 +260,13 @@ span {
 .slick-prev:hover {
     color: black !important;
 }
-.next-btn{
-   
+
+.next-btn {
+
     background: transparent;
 }
-.prev-btn{
+
+.prev-btn {
     margin-right: 10px;
     background: transparent;
 }
@@ -270,9 +279,10 @@ span {
     stroke: white;
 }
 
-.next-btn:hover svg circle{
+.next-btn:hover svg circle {
     fill: #2D3134;
 }
+
 .prev-btn:hover svg path {
     fill: #2D3134;
 }
@@ -281,7 +291,7 @@ span {
     stroke: white;
 }
 
-.prev-btn:hover svg circle{
+.prev-btn:hover svg circle {
     fill: #2D3134;
 }
 
@@ -354,15 +364,17 @@ span {
     bottom: 0px;
     width: 4000px;
     right: 100%;
-    background-color:#FAF8ED;
+    background-color: #FAF8ED;
 }
 
 .padding-cards {
     margin-top: 50px;
 }
-.overflow-hidden{
+
+.overflow-hidden {
     overflow: hidden !important;
 }
+
 p {
     margin-top: 0 !important;
     margin-bottom: unset !important;
@@ -395,6 +407,41 @@ section {
 .fs-20 {
     font-size: 16px !important;
 }
+
+/* nav-tabs */
+.nav-tabs {
+    --bs-nav-tabs-border-color: none !important;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
+    color: var(--color-black) !important;
+    background-color: none !important;
+    border-color: none !important;
+}
+
+.nav-link.active {
+    color: white !important;
+    background-color: #2D3134 !important;
+    border-color: none !important;
+}
+
+/* .nav-link:hover{
+    color: white !important;
+    background-color: #2D3134;
+} */
+.nav-tabs .nav-link {
+    margin-bottom: calc(-1 * var(--bs-nav-tabs-border-width));
+    border: 1px solid #2D3134 !important;
+    border-top-left-radius: 30px !important;
+    border-top-right-radius: 30px !important;
+    border-bottom-left-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+    margin-right: 20px;
+    margin-top: 20px !important;
+}
+
+/* nav tabs */
 
 .bg-img {
     background: url(/assets/images/bg-rectangle.png);
@@ -449,7 +496,7 @@ section {
     border-radius: 15px;
 }
 
-.fs-40{
+.fs-40 {
     font-size: 24px !important;
 }
 
@@ -541,40 +588,51 @@ span a:hover {
     grid-row: 6/7;
 }
 
-.border-radius-grid{
+.border-radius-grid {
     border-radius: 20px;
 }
-.span-border{
+
+.span-border {
     border: none !important;
 }
-.span-ml{
+
+.span-ml {
     margin-left: 15px !important;
     margin-right: 15px !important;
 }
-.svg1, .svg2 , .svg3{
+
+.svg1,
+.svg2,
+.svg3 {
     cursor: pointer;
 }
-.svg1:hover path{
+
+.svg1:hover path {
     cursor: pointer;
     fill: #F66F4D;
 }
-.svg1:hover circle{
+
+.svg1:hover circle {
     cursor: pointer;
     stroke: #F66F4D;
 }
- .svg2:hover path{
+
+.svg2:hover path {
     cursor: pointer;
     fill: #F66F4D;
 }
- .svg2:hover circle{
+
+.svg2:hover circle {
     cursor: pointer;
     stroke: #F66F4D;
 }
-.svg3:hover path{
+
+.svg3:hover path {
     cursor: pointer;
     fill: #F66F4D;
 }
-.svg3:hover circle{
+
+.svg3:hover circle {
     cursor: pointer;
     stroke: #F66F4D;
 }
@@ -582,9 +640,10 @@ span a:hover {
 @media (min-width:320px) {
     .card-bttn {
         padding: -3px !important;
-    
+
     }
 }
+
 @media (min-width:576px) {
     :root {
         --fs-12: 12px;
@@ -653,6 +712,7 @@ span a:hover {
         width: 500px;
     }
 }
+
 @media (min-width:768px) {
     .sec-6-heading {
         padding-right: 0px;
@@ -671,43 +731,47 @@ span a:hover {
         grid-column: 1/2;
         grid-row: 1/2;
     }
-    
+
     .grid-box2 {
         grid-column: 2/3;
         grid-row: 1/3;
     }
-    
+
     .grid-box3 {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    
+
     .grid-box4 {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    
+
     .grid-box5 {
         grid-column: 2/3;
         grid-row: 3/5;
     }
-    
+
     .grid-box6 {
         grid-column: 1/2;
         grid-row: 4/6;
     }
 }
+
 @media (min-width:992px) {
-    .mt-50{
+    .mt-50 {
         margin-top: 150px !important;
     }
+
     .width-hro {
         padding-top: 80px;
         padding-right: 120px !important;
     }
-    .smal-box-border{
+
+    .smal-box-border {
         border-left: #EAEAEB 1px solid;
     }
+
     :root {
         --fs-12: 12px;
         --fs-14: 14px;
@@ -753,6 +817,7 @@ span a:hover {
         font-size: 46px !important;
     }
 }
+
 @media (min-width:1200px) {
     .fs-56 {
         font-size: 56px !important;
@@ -770,27 +835,27 @@ span a:hover {
         grid-column: 1/2;
         grid-row: 1/2;
     }
-    
+
     .grid-box2 {
         grid-column: 2/3;
         grid-row: 1/ 3;
     }
-    
+
     .grid-box3 {
         grid-column: 3/5;
         grid-row: 1/2;
     }
-    
+
     .grid-box4 {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    
+
     .grid-box5 {
         grid-column: 3/4;
         grid-row: 2/3;
     }
-    
+
     .grid-box6 {
         grid-column: 4/5;
         grid-row: 2/3;
@@ -809,6 +874,7 @@ span a:hover {
         padding-left: 100px !important;
         padding-right: 80px !important;
     }
+
     .ps-22 {
         padding-left: 11%;
     }
@@ -824,7 +890,7 @@ span a:hover {
 
 
 @media (max-width:992px) {
-   
+
     .nav-bttn {
         color: #F66F4D;
         width: 127px;
@@ -834,6 +900,7 @@ span a:hover {
         border: 1.4px solid #F66F4D;
         transition: 0.1ms ease-in-out;
     }
+
     .item-center {
         display: flex;
         flex-direction: column;
@@ -841,6 +908,7 @@ span a:hover {
         align-items: center;
         text-align: center;
     }
+
     dl,
     ol,
     ul {
