@@ -354,7 +354,7 @@ span {
     bottom: 0px;
     width: 4000px;
     right: 100%;
-    background-color: #FAF8ED;
+    background-color:#FAF8ED;
 }
 
 .padding-cards {
@@ -373,7 +373,7 @@ footer {
 }
 
 section {
-    background: #FAF8ED;
+    background: #FAF8ED !important;
 }
 
 .lh-34 {
@@ -698,6 +698,9 @@ span a:hover {
     }
 }
 @media (min-width:992px) {
+    .mt-50{
+        margin-top: 150px !important;
+    }
     .width-hro {
         padding-top: 80px;
         padding-right: 120px !important;
