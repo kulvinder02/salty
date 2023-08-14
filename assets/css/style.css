@@ -306,6 +306,7 @@ span {
 
 /* popular destination */
 .slider-card {
+    height: 100% !important;
     padding: 12px;
     border-radius: 16px;
     border: 2px solid #FFF;
@@ -352,9 +353,11 @@ span {
     position: absolute;
     top: 0px;
     bottom: 0px;
-    width: 4000px;
-    right: 100%;
-    background-color:#FAF8ED;
+    width: 8000px !important;
+    height: 5000px !important;
+    right: 98.8%;
+    background-color:#FAF8ED !important;
+    box-shadow: none !important ;
 }
 
 .padding-cards {
