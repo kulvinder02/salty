@@ -19,6 +19,28 @@
 </head>
 
 <body>
+   <!-- PRELODER -->
+
+   <div
+   id="preloder"
+   class="bg-dark min-vh-100 position-fixed top-0 start-0 d-flex justify-content-center align-items-center w-100 z-3">
+   <img src="./assets/img/hro-man-img.png" alt="" class="" />
+ </div>
+
+  <!-- bottom to top -->
+  <button onclick="topFunction()" id="topBtn" title="Go to top"><svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="29" cy="29" r="29" fill="#FF5300"/>
+    <g clip-path="url(#clip0_394_3647)">
+    <path d="M30.5103 28.9998V41.0832H27.4894V28.9998H16.9165L28.9998 16.9165L41.0832 28.9998H30.5103Z" fill="white"/>
+    </g>
+    <defs>
+    <clipPath id="clip0_394_3647">
+    <rect width="36.25" height="36.25" fill="white" transform="translate(10.875 10.875)"/>
+    </clipPath>
+    </defs>
+    </svg>
+    </button>
+
   <!-- nav section -->
   <section>
     <div class="nav-bar1 d-flex align-items-center">
@@ -29,20 +51,20 @@
             <h1 class="ff-sen fs-20 fw-700 m-1">Salty</h1>
 
             <ul class="d-flex align-items-center text-center justify-content-center gap-5  nav-bar-sm" id="smal_nav">
-              <li><a href="" class="ff-poppin fs-16 fw-400 clr-blue">Home</a></li>
-              <li><a href="" class="ff-poppin fs-16 fw-400 clr-blue">About us</a></li>
-              <li><a href="" class="ff-poppin fs-16 fw-400 clr-blue">Destinations</a></li>
-              <li><a href="" class="ff-poppin fs-16 fw-400 clr-blue">Tours</a></li>
-              <li><a href="" class="ff-poppin fs-16 fw-400 clr-blue">Blog</a></li>
+              <li><a onclick="opennav()" href="#home" class="ff-poppin fs-16 fw-400 clr-blue tags-line">Home</a></li>
+              <li><a onclick="opennav()" href="#Categories" class="ff-poppin fs-16 fw-400 clr-blue tags-line">About us</a></li>
+              <li><a onclick="opennav()" href="#Destinations" class="ff-poppin fs-16 fw-400 clr-blue tags-line">Destinations</a></li>
+              <li><a onclick="opennav()" href="" class="ff-poppin fs-16 fw-400 clr-blue tags-line">Tours</a></li>
+              <li><a onclick="opennav()" href="" class="ff-poppin fs-16 fw-400 clr-blue tags-line">Blog</a></li>
             </ul>
           </div>
-          <button class="ff-poppin fs-16 fw-500 nav-bttn">Book Now <a href=""><svg width="16" height="15"
+          <button class="ff-poppin fs-16 fw-500 nav-bttn">Book Now <a href="">
+            <svg width="16" height="15"
                 viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0 8.45744L4.04598 10.2128L13.4253 2.87235L6.06897 11.1702V15L8.82758 11.9681L13.4253 13.5638L16 0L0 8.45744Z"
                   fill="#F66F4D" />
-              </svg>
-            </a></button>
+              </svg></a></button>
           <div onclick="opennav()" id="box" class="d-block d-lg-none click_box">
             <span id="span1"></span>
             <span id="span2"></span>
@@ -54,17 +76,17 @@
     </div>
   </section>
   <!-- hero section -->
-  <section>
+  <section id="home">
     <div class="container">
       <div class="row pt-5">
         <div class="col-12 col-xl-6 ">
-          <div class="width-hro">
+          <div class="width-hro item-center">
             <h1 class="ff-sen fs-84 fw-700 clr-black">Discover the Best Lovely Places</h1>
             <p class="ff-inter fw-400 fs-18 clr-gray mt-4">Plan and book your perfect trip with expert advice, travel
               tips, destination information and inspiration from us.</p>
             <div class="hro-box mt-5">
               <div class="row">
-                <div class="col-5">
+                <div class="col-12 d-flex justify-content-center col-sm-5">
                   <div class="smal-box ">
                     <h1 class="ff-inter fs-18 fw-500 clr-black mt-1 mb-1">Where</h1>
                     <div class="d-flex ">
@@ -79,29 +101,31 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-5 ">
-                  <div class="smal-box ">
-                    <h1 class="ff-inter fs-18 fw-500 clr-black mt-1 mb-1">Date</h1>
-                    <div class="d-flex">
-                      <p class="ff-inter fs-12 fw-400 clr-gray">09th March,2021</p>
-                      <a href="" class="svg-position"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M5.23656 5.16263V9.49649H4.68812V5.75088H4.67838C4.44356 5.87843 3.96094 6.17339 3.65625 6.38217V5.81748C3.9979 5.57766 4.3539 5.35896 4.72225 5.16263H5.23656Z"
-                            fill="#F66F4D" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M7.5855 9.57856C6.68444 9.57856 6.24 8.9562 6.20182 8.43618H6.75756C6.79169 8.7368 7.07119 9.10244 7.61068 9.10244C8.29644 9.10244 8.66775 8.41342 8.671 7.34419H8.64907C8.52475 7.68056 8.1315 7.98605 7.52538 7.98605C6.83313 7.98605 6.16362 7.49043 6.16362 6.54795C6.16362 5.62412 6.87131 5.07812 7.62369 5.07812C8.57594 5.07812 9.2105 5.67451 9.2105 7.2459C9.2105 8.71246 8.60763 9.57856 7.5855 9.57856ZM7.63913 7.51235C8.14694 7.51235 8.60112 7.11914 8.60112 6.55361C8.60112 5.87763 8.17294 5.55425 7.65863 5.55425C7.1825 5.55425 6.70963 5.86871 6.70963 6.53739C6.70963 7.20117 7.15081 7.51235 7.63913 7.51235Z"
-                            fill="#F66F4D" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M3.13101 0.118969C3.05483 0.0427971 2.95149 0 2.84375 0C2.73601 0 2.63267 0.0427971 2.55649 0.118969C2.4803 0.19519 2.4375 0.298489 2.4375 0.40625V0.8125H1.625C1.19402 0.8125 0.7807 0.983688 0.47595 1.28848C0.171207 1.59321 0 2.0065 0 2.4375V11.375C0 11.806 0.171207 12.2193 0.47595 12.524C0.7807 12.8288 1.19402 13 1.625 13H11.375C11.806 13 12.2193 12.8288 12.524 12.524C12.8288 12.2193 13 11.806 13 11.375V2.4375C13 2.0065 12.8288 1.59321 12.524 1.28848C12.2193 0.983688 11.806 0.8125 11.375 0.8125H10.5625V0.40625C10.5625 0.298489 10.5197 0.19519 10.4435 0.118969C10.3673 0.0427971 10.264 0 10.1562 0C10.0485 0 9.94517 0.0427971 9.86899 0.118969C9.7928 0.19519 9.75 0.298489 9.75 0.40625V0.8125H3.25V0.40625C3.25 0.298489 3.2072 0.19519 3.13101 0.118969ZM0.8125 11.375V3.25H12.1875V11.375C12.1875 11.5905 12.1019 11.7972 11.9495 11.9495C11.7971 12.1019 11.5905 12.1875 11.375 12.1875H1.625C1.40951 12.1875 1.20285 12.1019 1.05048 11.9495C0.8981 11.7972 0.8125 11.5905 0.8125 11.375Z"
-                            fill="#F66F4D" />
-                        </svg>
+                <div class="col-12 d-flex justify-content-center col-sm-5">
+               <div class="smal-box-border mt-2">
+                <div class="smal-box ">
+                  <h1 class="ff-inter fs-18 fw-500 clr-black mt-1 mb-1">Date</h1>
+                  <div class="d-flex">
+                    <p class="ff-inter fs-12 fw-400 clr-gray">09th March,2021</p>
+                    <a href="" class="svg-position"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M5.23656 5.16263V9.49649H4.68812V5.75088H4.67838C4.44356 5.87843 3.96094 6.17339 3.65625 6.38217V5.81748C3.9979 5.57766 4.3539 5.35896 4.72225 5.16263H5.23656Z"
+                          fill="#F66F4D" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.5855 9.57856C6.68444 9.57856 6.24 8.9562 6.20182 8.43618H6.75756C6.79169 8.7368 7.07119 9.10244 7.61068 9.10244C8.29644 9.10244 8.66775 8.41342 8.671 7.34419H8.64907C8.52475 7.68056 8.1315 7.98605 7.52538 7.98605C6.83313 7.98605 6.16362 7.49043 6.16362 6.54795C6.16362 5.62412 6.87131 5.07812 7.62369 5.07812C8.57594 5.07812 9.2105 5.67451 9.2105 7.2459C9.2105 8.71246 8.60763 9.57856 7.5855 9.57856ZM7.63913 7.51235C8.14694 7.51235 8.60112 7.11914 8.60112 6.55361C8.60112 5.87763 8.17294 5.55425 7.65863 5.55425C7.1825 5.55425 6.70963 5.86871 6.70963 6.53739C6.70963 7.20117 7.15081 7.51235 7.63913 7.51235Z"
+                          fill="#F66F4D" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M3.13101 0.118969C3.05483 0.0427971 2.95149 0 2.84375 0C2.73601 0 2.63267 0.0427971 2.55649 0.118969C2.4803 0.19519 2.4375 0.298489 2.4375 0.40625V0.8125H1.625C1.19402 0.8125 0.7807 0.983688 0.47595 1.28848C0.171207 1.59321 0 2.0065 0 2.4375V11.375C0 11.806 0.171207 12.2193 0.47595 12.524C0.7807 12.8288 1.19402 13 1.625 13H11.375C11.806 13 12.2193 12.8288 12.524 12.524C12.8288 12.2193 13 11.806 13 11.375V2.4375C13 2.0065 12.8288 1.59321 12.524 1.28848C12.2193 0.983688 11.806 0.8125 11.375 0.8125H10.5625V0.40625C10.5625 0.298489 10.5197 0.19519 10.4435 0.118969C10.3673 0.0427971 10.264 0 10.1562 0C10.0485 0 9.94517 0.0427971 9.86899 0.118969C9.7928 0.19519 9.75 0.298489 9.75 0.40625V0.8125H3.25V0.40625C3.25 0.298489 3.2072 0.19519 3.13101 0.118969ZM0.8125 11.375V3.25H12.1875V11.375C12.1875 11.5905 12.1019 11.7972 11.9495 11.9495C11.7971 12.1019 11.5905 12.1875 11.375 12.1875H1.625C1.40951 12.1875 1.20285 12.1019 1.05048 11.9495C0.8981 11.7972 0.8125 11.5905 0.8125 11.375Z"
+                          fill="#F66F4D" />
+                      </svg>
 
-                      </a>
-                    </div>
+                    </a>
                   </div>
                 </div>
-                <div class="col-2">
+               </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center col-sm-2">
                   <div class="search-box">
                     <a href=""><svg width="54" height="54" viewBox="0 0 54 54" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -120,12 +144,12 @@
           </div>
         </div>
         <div class="col-12 col-xl-6">
-          <div class="d-flex justify-content-end position-relative">
-            <img src="./assets/img/hro-man-img.png" alt="#" class="w-100">
+          <div class="d-flex justify-content-end position-relative mt-30">
+            <img src="./assets/img/hro-man-img.png" alt="#" class="w-100 ">
 
             <div class=" position-absolute card1">
               <div class="loction-box d-flex align-items-center">
-                <span><svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <span class="span-bg"><svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M9.90125 5.68361C9.90125 5.02775 9.77349 4.37831 9.52526 3.77238C9.27703 3.16645 8.9132 2.61588 8.45453 2.15212C7.99587 1.68836 7.45135 1.32048 6.85208 1.0695C6.2528 0.818512 5.61051 0.689331 4.96186 0.689331C4.3132 0.689331 3.67091 0.818512 3.07163 1.0695C2.47236 1.32048 1.92784 1.68836 1.46918 2.15212C1.01051 2.61588 0.646678 3.16645 0.39845 3.77238C0.150222 4.37831 0.0224609 5.02775 0.0224609 5.68361C0.0224609 6.67319 0.311768 7.59356 0.80218 8.36981H0.796535C2.46182 11.0061 4.96186 12.7634 4.96186 12.7634L9.12718 8.36981H9.12224C9.63058 7.56814 9.90093 6.6359 9.90125 5.68361ZM4.96186 7.82401C4.40042 7.82401 3.86198 7.5985 3.46499 7.1971C3.068 6.7957 2.84497 6.25128 2.84497 5.68361C2.84497 5.11594 3.068 4.57152 3.46499 4.17011C3.86198 3.76871 4.40042 3.5432 4.96186 3.5432C5.52329 3.5432 6.06173 3.76871 6.45872 4.17011C6.85571 4.57152 7.07874 5.11594 7.07874 5.68361C7.07874 6.25128 6.85571 6.7957 6.45872 7.1971C6.06173 7.5985 5.52329 7.82401 4.96186 7.82401Z"
                       fill="#2D3134" />
@@ -149,99 +173,75 @@
     </div>
   </section>
   <!-- Categories section -->
-  <section>
-    <div class="container">
-      <div class="row pt-5">
-        <div class="col-4">
-          <h1 class="ff-inter fw-600 fs-56 clr-black">Categories</h1>
+  <section class="overflow-hidden" id="Categories">
+    <div class="container position-relative">
+      <div class="row pt-100">
+        <div class="col-12 col-lg-4 item-center">
+          <h1 class="ff-inter fw-600 fs-56 clr-black mb-4">Categories</h1>
           <p class="ff-inter fw-400 fs-16 clr-gray">Here are lots of interesting destinations to visit, but don’t be
             confused—they’re already grouped by category.</p>
         </div>
+        <div class="col-12 col-lg-8 d-flex align-items-center text-center justify-content-lg-end justify-content-center mt-4 mt-lg-0">
+          <button class="prev-btn arrowleft"><svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="27" cy="27" r="26.5" transform="matrix(-1 0 0 1 54 0)" stroke="#2D3134"/>
+            <path d="M30 33L24 27L30 21" stroke="#2D3134" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </button>
+          <button class="next-btn arrowright"><svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="27" cy="27" r="26.5" transform="matrix(-1 0 0 1 54 0)" stroke="#2D3134"/>
+            <path d="M30 33L24 27L30 21" stroke="#2D3134" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </button>
+        </div>
         <div class="row mt-5 slider2">
-          <div class="col-2">
-            <div class="d-flex flex-column justify-content-center slider-img-effetc">
-              <h1 class="ff-inter fs-20 fw-600 hover-effect position-absolute d-none">Visite</h1>
-              <img src="./assets/img/lake-man-img.png" alt="#" class="w-100">
-              <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Beach</h1>
-            </div>
+          <div class="col-2 p-2 ">
+            <div class="slider-img-effet"><img src="./assets/img/lake-man-img.png" alt="#" class="w-100"></div>
+            <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Beach</h1>
+          </div> 
+          <div class="col-2 p-2">
+            <div class="slider-img-effet"><img src="./assets/img/desert-img.png" alt="#" class="w-100"></div>
+            <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Desert</h1>
+          </div> 
+          <div class="col-2 p-2">
+            <div class="slider-img-effet"><img src="./assets/img/mountain.png" alt="#" class="w-100"></div>
+            <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Mountain</h1>
+          </div> 
+          <div class="col-2 p-2">
+            <div class="slider-img-effet"><img src="./assets/img/trmple-img.png" alt="#" class="w-100"></div>
+            <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Temple</h1>
+          </div> 
+          <div class="col-2 p-2">
+            <div class="slider-img-effet"><img src="./assets/img/tower-img.png" alt="#" class="w-100"></div>
+            <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Tower</h1>
+          </div> 
+          <div class="col-2 p-2">
+            <div class="slider-img-effet"><img src="./assets/img/lighting-img.png" alt="#" class="w-100"></div>
+            <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Pyramid</h1>
           </div>
-          <div class="col-2">
-            <div class="d-flex flex-column justify-content-center slider-img-effetc">
-              <h1 class="ff-inter fs-20 fw-600 hover-effect position-absolute d-none">Visite</h1>
-              <img src="./assets/img/desert-img.png" alt="#">
-              <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Desert</h1>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="d-flex flex-column justify-content-center slider-img-effetc">
-              <h1 class="ff-inter fs-20 fw-600 hover-effect position-absolute d-none">Visite</h1>
-              <img src="./assets/img/mountain.png" alt="#">
-              <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Mountain</h1>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="d-flex flex-column justify-content-center slider-img-effetc">
-              <h1 class="ff-inter fs-20 fw-600 hover-effect position-absolute d-none">Visite</h1>
-              <img src="./assets/img/trmple-img.png" alt="#">
-              <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Temple</h1>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="d-flex flex-column justify-content-center slider-img-effetc">
-              <h1 class="ff-inter fs-20 fw-600 hover-effect position-absolute d-none">Visite</h1>
-              <img src="./assets/img/tower-img.png" alt="#">
-              <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Tower</h1>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="d-flex flex-column justify-content-center slider-img-effetc">
-              <h1 class="ff-inter fs-20 fw-600 hover-effect position-absolute d-none">Visite</h1>
-              <img src="./assets/img/lighting-img.png" alt="#">
-              <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Pyramid</h1>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="d-flex flex-column justify-content-center slider-img-effetc">
-              <h1 class="ff-inter fs-20 fw-600 hover-effect position-absolute d-none">Visite</h1>
-              <img src="./assets/img/lake-man-img.png" alt="#" class="w-100">
-              <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Beach</h1>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="d-flex flex-column justify-content-center slider-img-effetc">
-              <h1 class="ff-inter fs-20 fw-600 hover-effect position-absolute d-none">Visite</h1>
-              <img src="./assets/img/desert-img.png" alt="#">
-              <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Desert</h1>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="d-flex flex-column justify-content-center slider-img-effetc">
-              <h1 class="ff-inter fs-20 fw-600 hover-effect position-absolute d-none">Visite</h1>
-              <img src="./assets/img/mountain.png" alt="#">
-              <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Mountain</h1>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="d-flex flex-column justify-content-center slider-img-effetc">
-              <h1 class="ff-inter fs-20 fw-600 hover-effect position-absolute d-none">Visite</h1>
-              <img src="./assets/img/trmple-img.png" alt="#">
-              <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Temple</h1>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="d-flex flex-column justify-content-center slider-img-effetc">
-              <h1 class="ff-inter fs-20 fw-600 hover-effect position-absolute d-none">Visite</h1>
-              <img src="./assets/img/tower-img.png" alt="#">
-              <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Tower</h1>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="d-flex flex-column justify-content-center slider-img-effetc">
-              <h1 class="ff-inter fs-20 fw-600 hover-effect position-absolute d-none">Visite</h1>
-              <img src="./assets/img/lighting-img.png" alt="#">
-              <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Pyramid</h1>
-            </div>
-          </div>
+          <div class="col-2 p-2 ">
+            <div class="slider-img-effet"><img src="./assets/img/lake-man-img.png" alt="#" class="w-100"></div>
+            <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Beach</h1>
+          </div> 
+          <div class="col-2 p-2">
+            <div class="slider-img-effet"><img src="./assets/img/desert-img.png" alt="#" class="w-100"></div>
+            <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Desert</h1>
+          </div> 
+          <div class="col-2 p-2">
+            <div class="slider-img-effet"><img src="./assets/img/mountain.png" alt="#" class="w-100"></div>
+            <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Mountain</h1>
+          </div> 
+          <div class="col-2 p-2">
+            <div class="slider-img-effet"><img src="./assets/img/trmple-img.png" alt="#" class="w-100"></div>
+            <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Temple</h1>
+          </div> 
+          <div class="col-2 p-2">
+            <div class="slider-img-effet"><img src="./assets/img/tower-img.png" alt="#" class="w-100"></div>
+            <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Tower</h1>
+          </div> 
+          <div class="col-2 p-2">
+            <div class="slider-img-effet"><img src="./assets/img/lighting-img.png" alt="#" class="w-100"></div>
+            <h1 class="ff-inter fw-500 fs-26 clr-black text-center mt-3">Pyramid</h1>
+          </div> 
         </div>
       </div>
     </div>
@@ -249,35 +249,37 @@
   <!-- Our Experience -->
   <section>
     <div class="container">
-      <div class="row pt-5">
+      <div class="row pt-100">
         <div class="col-12 col-lg-6">
-          <img src="./assets/img/student-img.png" alt="">
+          <img src="./assets/img/student-img.png" alt="#" class="w-100">
         </div>
         <div class="col-12 col-lg-6">
-          <div>
-            <p class="ff-inter fs-20  fw-600 clr-orange">Our Experience</p>
-            <h1 class="ff-inter fs-56 fw-600 clr-black">Our Stories Have Adventures</h1>
+          <div class="padding-box item-center">
+            <p class="ff-inter fs-20  fw-600 clr-orange mt-2 mb-2">Our Experience</p>
+            <h1 class="ff-inter fs-56 fw-600 clr-black mb-3">Our Stories Have Adventures</h1>
             <p class="ff-inter fs-16 fw-400 clr-gray">We are experienced in bringing adventures to stay their journey,
               with all outdoor destinations in the world as our specialties. Start your adventure now! Nature has
               already called you!</p>
           </div>
-          <div class="row mt-5">
-            <div class="col-4">
-              <div class="small-card2 d-flex flex-column justify-content-start align-items-center p-3">
-                <h1 class="ff-inter fs-46 fw-600 clr-orange mt-2 ">12K+</h1>
-                <p class="ff-inter fs-21 fw-400 clr-gray m-4">Succes Journey</p>
+          <div class="col-12 padding-cards">
+            <div class="row ">
+              <div class="col-4">
+                <div class="small-card2 d-flex flex-column justify-content-start align-items-center ">
+                  <h1 class="ff-inter fs-46 fw-600 clr-orange mt-2 ">12K+</h1>
+                  <p class="ff-inter fs-21 fw-400 clr-gray m-1 mb-3 ml-10">Succes Journey</p>
+                </div>
               </div>
-            </div>
-            <div class="col-4">
-              <div class="small-card2 d-flex flex-column justify-content-start align-items-center p-3">
-                <h1 class="ff-inter fs-46 fw-600 clr-orange mt-2 ">16K+</h1>
-                <p class="ff-inter fs-21 fw-400 clr-gray m-4">Awards Winning</p>
+              <div class="col-4">
+                <div class="small-card2 d-flex flex-column justify-content-start align-items-center ">
+                  <h1 class="ff-inter fs-46 fw-600 clr-orange mt-2 ">16K+</h1>
+                  <p class="ff-inter fs-21 fw-400 clr-gray m-1 mb-3 ml-10">Awards Winning</p>
+                </div>
               </div>
-            </div>
-            <div class="col-4">
-              <div class="small-card2 d-flex flex-column justify-content-start align-items-center p-3">
-                <h1 class="ff-inter fs-46 fw-600 clr-orange mt-2 ">20K+</h1>
-                <p class="ff-inter fs-21 fw-400 clr-gray m-4">Years Of Experience</p>
+              <div class="col-4">
+                <div class="small-card2 d-flex flex-column justify-content-start align-items-center ">
+                  <h1 class="ff-inter fs-46 fw-600 clr-orange mt-2 ">20K+</h1>
+                  <p class="ff-inter fs-21 fw-400 clr-gray m-1 mb-3 ml-10">Years Of Experience</p>
+                </div>
               </div>
             </div>
           </div>
@@ -286,106 +288,132 @@
     </div>
   </section>
   <!-- Find Popular Destination -->
-  <section class="overflow-hidden">
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
+  <section class="overflow-hidden" id="Destinations">
+    <div class="container position-relative">
+      <div class="row pt-5 ">
+        <div class="col-12 col-lg-4 item-center">
           <h1 class="ff-inter fs-56 fw-600 clr-black">Find Popular Destination</h1>
         </div>
+        <div class="col-12 col-lg-8 d-flex align-items-center text-center justify-content-lg-end justify-content-center mt-4 mt-lg-0 ">
+          <button class="prev-btn arrowleft"><svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="27" cy="27" r="26.5" transform="matrix(-1 0 0 1 54 0)" stroke="#2D3134"/>
+            <path d="M30 33L24 27L30 21" stroke="#2D3134" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </button>
+          <button class="next-btn arrowright"><svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="27" cy="27" r="26.5" transform="matrix(-1 0 0 1 54 0)" stroke="#2D3134"/>
+            <path d="M30 33L24 27L30 21" stroke="#2D3134" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </button> 
+        </div>
       </div>
-      <div class="row mt-5 slider3 ">
-        <div class="col-4">
-          <div class="slider-card">
-            <img src="./assets/img/s;ider-img1.png" alt="#" class="w-100">
-            <h1 class="ff-inter fs-24 fw-600 clr-black mt-3 mb-3">Mountain Hiking Tour</h1>
-            <p class="ff-inter fs-14 fw-400 clr-gray mb-4">Mountain Hiking Tour</p>
+<div class="">
+  <div class="row mt-5 slider3 ">
+    <div class="col-4">
+     <div class="p-3">
+      <div class="slider-card">
+        <img src="./assets/img/s;ider-img1.png" alt="#" class="w-100">
+        <h1 class="ff-inter fs-24 fw-600 clr-black mt-3 mb-3">Mountain Hiking Tour</h1>
+        <p class="ff-inter fs-14 fw-400 clr-gray mb-4">Mountain Hiking Tour</p>
 
-            <div class="d-flex justify-content-between">
-              <div class="d-flex">
-                <h1 class="ff-inter fw-600 fs-24 clr-black">$89 </h1>
-                <span class="ff-inter fw-400 fs-16 clr-gray m-1">/Person</span>
-              </div>
-              <button class="ff-inter fs-14 fw-400 card-bttn mb-3">Book Now</button>
-            </div>
+        <div class="d-flex justify-content-between">
+          <div class="d-flex">
+            <h1 class="ff-inter fw-600 fs-24 clr-black">$89 </h1>
+            <p class="ff-inter fw-400 fs-16 clr-gray m-1">/Person</p>
           </div>
+          <button class="ff-inter fs-14 fw-400 card-bttn mb-3">Book Now</button>
         </div>
-        <div class="col-4">
-          <div class="slider-card">
-            <img src="./assets/img/slider-img2.png" alt="#" class="w-100">
-            <h1 class="ff-inter fs-24 fw-600 clr-black mt-3 mb-3">Machu Picchu, Peru</h1>
-            <p class="ff-inter fs-14 fw-400 clr-gray mb-4">Machu Picchu, Peru</p>
-
-            <div class="d-flex justify-content-between">
-              <div class="d-flex">
-                <h1 class="ff-inter fw-600 fs-24 clr-black">$99 </h1>
-                <span class="ff-inter fw-400 fs-16 clr-gray m-1">/Person</span>
-              </div>
-              <button class="ff-inter fs-14 fw-400 card-bttn mb-3">Book Now</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="slider-card">
-            <img src="./assets/img/slider-img3.png" alt="#" class="w-100">
-            <h1 class="ff-inter fs-24 fw-600 clr-black mt-3 mb-3">The Grand Canyon, Arizona</h1>
-            <p class="ff-inter fs-14 fw-400 clr-gray mb-4">Mountain Hiking Tour</p>
-
-            <div class="d-flex justify-content-between">
-              <div class="d-flex">
-                <h1 class="ff-inter fw-600 fs-24 clr-black">$70 </h1>
-                <span class="ff-inter fw-400 fs-16 clr-gray m-1">/Person</span>
-              </div>
-              <button class="ff-inter fs-14 fw-400 card-bttn mb-3">Book Now</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="slider-card">
-            <img src="./assets/img/s;ider-img1.png" alt="#" class="w-100">
-            <h1 class="ff-inter fs-24 fw-600 clr-black mt-3 mb-3">Mountain Hiking Tour</h1>
-            <p class="ff-inter fs-14 fw-400 clr-gray mb-4">Mountain Hiking Tour</p>
-
-            <div class="d-flex justify-content-between">
-              <div class="d-flex">
-                <h1 class="ff-inter fw-600 fs-24 clr-black">$89 </h1>
-                <span class="ff-inter fw-400 fs-16 clr-gray m-1">/Person</span>
-              </div>
-              <button class="ff-inter fs-14 fw-400 card-bttn mb-3">Book Now</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="slider-card">
-            <img src="./assets/img/slider-img2.png" alt="#" class="w-100">
-            <h1 class="ff-inter fs-24 fw-600 clr-black mt-3 mb-3">Machu Picchu, Peru</h1>
-            <p class="ff-inter fs-14 fw-400 clr-gray mb-4">Machu Picchu, Peru</p>
-
-            <div class="d-flex justify-content-between">
-              <div class="d-flex">
-                <h1 class="ff-inter fw-600 fs-24 clr-black">$99 </h1>
-                <span class="ff-inter fw-400 fs-16 clr-gray m-1">/Person</span>
-              </div>
-              <button class="ff-inter fs-14 fw-400 card-bttn mb-3">Book Now</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="slider-card">
-            <img src="./assets/img/slider-img3.png" alt="#" class="w-100">
-            <h1 class="ff-inter fs-24 fw-600 clr-black mt-3 mb-3">The Grand Canyon, Arizona</h1>
-            <p class="ff-inter fs-14 fw-400 clr-gray mb-4">Mountain Hiking Tour</p>
-
-            <div class="d-flex justify-content-between">
-              <div class="d-flex">
-                <h1 class="ff-inter fw-600 fs-24 clr-black">$70 </h1>
-                <span class="ff-inter fw-400 fs-16 clr-gray m-1">/Person</span>
-              </div>
-              <button class="ff-inter fs-14 fw-400 card-bttn mb-3">Book Now</button>
-            </div>
-          </div>
-        </div>
-
       </div>
+     </div>
+    </div>
+    <div class="col-4">
+     <div class="p-3">
+      <div class="slider-card">
+        <img src="./assets/img/slider-img2.png" alt="#" class="w-100">
+        <h1 class="ff-inter fs-24 fw-600 clr-black mt-3 mb-3">Machu Picchu, Peru</h1>
+        <p class="ff-inter fs-14 fw-400 clr-gray mb-4">Machu Picchu, Peru</p>
+
+        <div class="d-flex justify-content-between">
+          <div class="d-flex">
+            <h1 class="ff-inter fw-600 fs-24 clr-black">$99 </h1>
+            <p class="ff-inter fw-400 fs-16 clr-gray m-1">/Person</p>
+          </div>
+          <button class="ff-inter fs-14 fw-400 card-bttn mb-3">Book Now</button>
+        </div>
+      </div>
+     </div>
+    </div>
+    <div class="col-4">
+     <div class="p-3">
+      <div class="slider-card">
+        <img src="./assets/img/slider-img3.png" alt="#" class="w-100">
+        <h1 class="ff-inter fs-24 fw-600 clr-black mt-3 mb-3">The Grand Canyon</h1>
+        <p class="ff-inter fs-14 fw-400 clr-gray mb-4">Mountain Hiking Tour</p>
+
+        <div class="d-flex justify-content-between">
+          <div class="d-flex">
+            <h1 class="ff-inter fw-600 fs-24 clr-black">$70 </h1>
+            <p class="ff-inter fw-400 fs-16 clr-gray m-1">/Person</p>
+          </div>
+          <button class="ff-inter fs-14 fw-400 card-bttn mb-3">Book Now</button>
+        </div>
+      </div>
+     </div>
+    </div>
+    <div class="col-4">
+      <div class="p-3">
+       <div class="slider-card">
+         <img src="./assets/img/s;ider-img1.png" alt="#" class="w-100">
+         <h1 class="ff-inter fs-24 fw-600 clr-black mt-3 mb-3">Mountain Hiking Tour</h1>
+         <p class="ff-inter fs-14 fw-400 clr-gray mb-4">Mountain Hiking Tour</p>
+
+         <div class="d-flex justify-content-between">
+           <div class="d-flex">
+             <h1 class="ff-inter fw-600 fs-24 clr-black">$89 </h1>
+             <p class="ff-inter fw-400 fs-16 clr-gray m-1">/Person</p>
+           </div>
+           <button class="ff-inter fs-14 fw-400 card-bttn mb-3">Book Now</button>
+         </div>
+       </div>
+      </div>
+     </div>
+     <div class="col-4">
+      <div class="p-3">
+       <div class="slider-card">
+         <img src="./assets/img/slider-img2.png" alt="#" class="w-100">
+         <h1 class="ff-inter fs-24 fw-600 clr-black mt-3 mb-3">Machu Picchu, Peru</h1>
+         <p class="ff-inter fs-14 fw-400 clr-gray mb-4">Machu Picchu, Peru</p>
+
+         <div class="d-flex justify-content-between">
+           <div class="d-flex">
+             <h1 class="ff-inter fw-600 fs-24 clr-black">$99 </h1>
+             <p class="ff-inter fw-400 fs-16 clr-gray m-1">/Person</p>
+           </div>
+           <button class="ff-inter fs-14 fw-400 card-bttn mb-3">Book Now</button>
+         </div>
+       </div>
+      </div>
+     </div>
+     <div class="col-4">
+      <div class="p-3">
+       <div class="slider-card">
+         <img src="./assets/img/slider-img3.png" alt="#" class="w-100">
+         <h1 class="ff-inter fs-24 fw-600 clr-black mt-3 mb-3">The Grand Canyon</h1>
+         <p class="ff-inter fs-14 fw-400 clr-gray mb-4">Mountain Hiking Tour</p>
+
+         <div class="d-flex justify-content-between">
+           <div class="d-flex">
+             <h1 class="ff-inter fw-600 fs-24 clr-black">$70 </h1>
+             <p class="ff-inter fw-400 fs-16 clr-gray m-1">/Person</p>
+           </div>
+           <button class="ff-inter fs-14 fw-400 card-bttn mb-3">Book Now</button>
+         </div>
+       </div>
+      </div>
+     </div>   
+
+  </div>
+</div>
     </div>
   </section>
 
@@ -404,7 +432,13 @@
       document.getElementById("span1").classList.toggle("span1_rotate")
       document.getElementById("span2").classList.toggle("span2_rotate")
       document.getElementById("span3").classList.toggle("span3_rotate")
-    }
+      document.body.classList.toggle("overflow-hidden");
+      }
+
+      setTimeout(() => {
+        document.getElementById("preloder").classList.add("d-none");
+        document.body.classList.remove("overflow-hidden");
+      }, 5000);
   </script>
   <script>
     $('.slider2').slick({
@@ -415,26 +449,27 @@
       pauseOnHover: true,
       pauseOnFocus: true,
       cssEase: 'linear',
-      responsive: [{
+      responsive: [
+        {
           breakpoint: 992,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 5,
             slidesToScroll: 2,
             infinite: true,
-            dots: true
+            dots: false
           }
         },
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 4,
             slidesToScroll: 2
           }
         },
         {
           breakpoint: 576,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 3,
             slidesToScroll: 1
           }
         }
@@ -446,6 +481,7 @@
   </script>
   <script>
     $('.slider3').slick({
+    
       dots: false,
       speed: 100,
       slidesToShow: 3,
@@ -454,12 +490,12 @@
       pauseOnFocus: true,
       cssEase: 'linear',
       responsive: [{
-          breakpoint: 992,
+          breakpoint: 1200,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
             infinite: true,
-            dots: true
+            dots: false
           }
         },
         {
@@ -482,6 +518,68 @@
       ]
     });
   </script>
+  <script>
+    // slider 2
+            $(".prev-btn").click(function () {
+                    $(".slider2").slick("slickPrev");
+                });
+
+                $(".next-btn").click(function () {
+                    $(".slider2").slick("slickNext");
+                });
+                $(".prev-btn").addClass("slick-disabled");
+                $(".slider2").on("afterChange", function () {
+                    if ($(".slick-prev").hasClass("slick-disabled")) {
+                        $(".prev-btn").addClass("slick-disabled");
+                    } else {
+                        $(".prev-btn").removeClass("slick-disabled");
+                    }
+                    if ($(".slick-next").hasClass("slick-disabled")) {
+                        $(".next-btn").addClass("slick-disabled");
+                    } else {
+                        $(".next-btn").removeClass("slick-disabled");
+                    }
+                });
+
+                // slider 3
+                
+            $(".prev-btn").click(function () {
+                    $(".slider3").slick("slickPrev");
+                });
+
+                $(".next-btn").click(function () {
+                    $(".slider3").slick("slickNext");
+                });
+                $(".prev-btn").addClass("slick-disabled");
+                $(".slider3").on("afterChange", function () {
+                    if ($(".slick-prev").hasClass("slick-disabled")) {
+                        $(".prev-btn").addClass("slick-disabled");
+                    } else {
+                        $(".prev-btn").removeClass("slick-disabled");
+                    }
+                    if ($(".slick-next").hasClass("slick-disabled")) {
+                        $(".next-btn").addClass("slick-disabled");
+                    } else {
+                        $(".next-btn").removeClass("slick-disabled");
+                    }
+                });
+           </script>
+           <script>
+            let mybutton = document.getElementById("topBtn");
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
 </body>
 
 </html>
