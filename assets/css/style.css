@@ -146,6 +146,9 @@ span {
     margin-left: 40px !important;
 
 }
+.small-box-mt{
+    margin-top:8px ;
+}
 
 .border-lft {
     width: 0.1px !important;
