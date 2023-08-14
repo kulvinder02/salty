@@ -1,0 +1,9 @@
+260px
+
+.slider{
+     height: 275px;
+    width: 500px;
+}
+
+75%
+0

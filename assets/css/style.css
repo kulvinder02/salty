@@ -160,6 +160,9 @@ span {
     top: 40%;
     left: 37%;
     transition: 2s ease-in-out !important;
+    background-color: #2D3134;
+    height: 100vh;
+    text-align: center;
 }
 
 .slider-img-effetc:hover .hover-effect {
